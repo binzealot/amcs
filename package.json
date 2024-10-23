@@ -1,0 +1,27 @@
+{
+  "name": "amcs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Automated Music Catalog Service",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "dev": "tsc && node ./dist/index.js",
+    "auth": "tsc && node ./dist/authorize.js"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.8",
+    "@types/sqlite3": "^3.1.11",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "open": "^10.1.0",
+    "sequelize": "^6.37.4",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}
